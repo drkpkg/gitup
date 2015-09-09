@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 1>&2
+   exit 1
+else
+   echo "Installing..."
+   mv gitup /usr/bin/gitup
+   echo "Done!"
+fi

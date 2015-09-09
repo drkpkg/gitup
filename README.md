@@ -5,13 +5,19 @@
 - Install gitup:
 
 ```sh
-# sh installer.sh
+$ sudo ./installer
 ```
 
 - Go to your repository folder:
 
 ```sh
-cd /home/user/your/repository
+$ cd /home/user/your/repository
+```
+
+- Execute GitUp
+
+```sh
+$ gitup
 ```
 
 - Insert your commit message
