@@ -2,15 +2,21 @@
 
 ## Usage (simple as 1, 2, 3)
 
-```sh
-cd /your/git/repository
-```
+- Install gitup:
 
 ```sh
-sh /your/downloads/path/gitup.sh
+# sh installer.sh
 ```
 
-- Insert commit
+- Go to your repository folder:
+
+```sh
+cd /home/user/your/repository
+```
+
+- Insert your commit message
+
+- Hit ENTER
 
 - Done!
 
