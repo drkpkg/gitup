@@ -1,11 +1,18 @@
 #!/bin/bash
 
-# GitUp: a simple GitHub uploader (Bash scripting excercise)
+# GitUp script
 # Federico Damián Schonborn (feskyde)
 # 2015
 
+echo "Adding files..."
 git add .
-echo "Type your commit message here:"
+echo ""
+echo "Write your commit message here (without quotes):"
 read commitm
+echo ""
+echo "Adding message to commit..."
 git commit -m "$commitm"
+echo ""
+echo "Pushing to master branch..."
 git push -u origin master
+echo ""
