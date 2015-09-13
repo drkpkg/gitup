@@ -1,4 +1,4 @@
-# GitUp, a simple git uploader
+# GitUp, a simple GitHub uploader
 
 ## Usage (simple as 1, 2, 3)
 
