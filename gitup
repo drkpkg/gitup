@@ -1,18 +1,24 @@
 #!/bin/bash
 
-# GitUp script
+# Original GitUp script
 # Federico Damián Schonborn (feskyde)
 # 2015
 
-echo "Adding files..."
-git add .
-echo ""
-echo "Write your commit message here (without quotes):"
-read commitm
-echo ""
-echo "Adding message to commit..."
-git commit -m "$commitm"
-echo ""
-echo "Pushing to master branch..."
-git push -u origin master
-echo ""
+# Modified by drkpkg :D
+
+case $1 in
+  "--help"|"")
+    echo "Use: gitup commit_message branch"
+    ;;
+  *)
+    echo "Adding files..."
+    git add .
+    echo ""
+    echo "Adding message to commit..."
+    git commit -m "$1"
+    echo ""
+    echo "Pushing to $2 branch..."
+    git push origin "$2"
+    echo ""
+    ;;
+esac
